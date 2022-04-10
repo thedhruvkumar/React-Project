@@ -8,8 +8,7 @@ function App() {
     <>
     <div className="main">
       <NavBar></NavBar>
-      <div className="my-40">
-
+      <div className="mx-5">
       <Slideshow></Slideshow>
       </div>
       <Footer></Footer>
