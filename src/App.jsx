@@ -2,6 +2,7 @@ import './App.css';
 import Footer from './Components/Footer';
 import NavBar from './Components/NavBar';
 import Slideshow from './Components/Slideshow';
+import TextForm from './Components/TextForm';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
     <div className="main">
       <NavBar></NavBar>
       <div className="container">
-      <Slideshow></Slideshow>
+      <TextForm></TextForm>
       </div>
       <Footer></Footer>
     </div>
