@@ -9,14 +9,14 @@ const TextForm = () => {
 
     }
     const textChange = () =>{
-        settext(text.value)
+        settext(document.getElementById('maintextForm').innerText)
     }
 
   return (
     <>
 <div class="mb-3">
   <label HtmlFor="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea value={text} onChange={textChange} class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea value={text} onChange={textChange} class="form-control" id="maintextForm" rows="3"></textarea>
 </div>
     </>
   )
