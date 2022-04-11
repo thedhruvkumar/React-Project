@@ -6,8 +6,7 @@ const TextForm = () => {
     const [text, settext] = useState('')
 
     const handleBtn = () =>{
-        const textval = document.getElementById('mainTextForm').innerText;
-        settext(textval.toUpperCase())
+        settext(text.toUpperCase())
     }
     const textChange = (event) =>{
         settext(event.target.value)
