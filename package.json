@@ -1,5 +1,6 @@
 {
   "name": "tutorial-app",
+  "description":"A personal Demo Project for Learning Reactjs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
