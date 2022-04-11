@@ -8,7 +8,7 @@ function App() {
     <>
     <div className="main">
       <NavBar></NavBar>
-      <div className="m-auto w-75 h-25">
+      <div className="container">
       <Slideshow></Slideshow>
       </div>
       <Footer></Footer>
