@@ -7,7 +7,7 @@ const TextForm = () => {
 
     const handleUpper = () =>{
         settext(text.toUpperCase())
-        console.log(text.trim().split(' ').filter(f=>f!==" "))
+        console.log(text.trim().split(' ').filter(f=>f!==" " && f!==""))
     }
     const handleLower = () =>{
         settext(text.toLowerCase())
