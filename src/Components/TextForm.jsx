@@ -17,17 +17,21 @@ const TextForm = () => {
     const copyBtn=()=>{
       navigator.clipboard.writeText(text);
     }
+    const handleClr = () =>{
+      settext('')
+    }
 
   return (
     <>
 <div class="mb-3">
     <h1>Enter Text</h1>
   <textarea value={text} onChange={textChange} class="form-control" id="maintextForm" rows="3"></textarea>
+  <span>Characters :{text.split('').filter(f=>f!=='').length}</span>
 </div>
 <button className="btn btn-primary m-1" onClick={handleUpper} >UpperCase</button>
 <button className="btn btn-primary m-1" onClick={handleLower} >LowerCase</button>
-<button className="btn btn-primary" onClick={copyBtn} >Copy</button>
-{/* <button className="btn btn-primary" onClick={handleBtn} >UpperCase</button> */}
+<button className="btn btn-primary m-1" onClick={copyBtn} >Copy</button>
+<button className="btn btn-primary m-1" onClick={handleClr} >Clear</button>
     </>
   )
 }
