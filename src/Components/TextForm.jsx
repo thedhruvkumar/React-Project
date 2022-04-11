@@ -6,7 +6,7 @@ const TextForm = () => {
     const [text, settext] = useState('')
 
     const handleBtn = () =>{
-        const textval = document.getElementById('mainTextForm').value;
+        const textval = document.getElementById('mainTextForm').innerText;
         settext(textval.toUpperCase())
     }
     const textChange = (event) =>{
@@ -16,6 +16,7 @@ const TextForm = () => {
   return (
     <>
 <div class="mb-3">
+    <h1>Enter Text</h1>
   <textarea value={text} onChange={textChange} class="form-control" id="maintextForm" rows="3"></textarea>
 </div>
 <button className="btn btn-primary" onClick={handleBtn} >UpperCase</button>
