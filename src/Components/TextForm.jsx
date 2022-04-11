@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 const TextForm = () => {
 
-    const [text, settext] = useState(0)
+    const [text, settext] = useState('')
 
     const handleBtn = () =>{
 
