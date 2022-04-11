@@ -9,7 +9,7 @@ const TextForm = () => {
 
     }
     const textChange = () =>{
-        settext(text)
+        settext(text.value)
     }
 
   return (
