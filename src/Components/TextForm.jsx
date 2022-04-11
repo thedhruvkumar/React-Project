@@ -9,7 +9,7 @@ const TextForm = () => {
         settext(text.toUpperCase())
     }
     const handleLower = () =>{
-        settext(text.toUpperCase())
+        settext(text.toLowerCase())
     }
     const textChange = (event) =>{
         settext(event.target.value)
