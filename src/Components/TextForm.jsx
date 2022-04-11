@@ -14,6 +14,9 @@ const TextForm = () => {
     const textChange = (event) =>{
         settext(event.target.value)
     }
+    const copyBtn=()=>{
+      navigator.clipboard.writeText(text);
+    }
 
   return (
     <>
@@ -23,7 +26,7 @@ const TextForm = () => {
 </div>
 <button className="btn btn-primary m-1" onClick={handleUpper} >UpperCase</button>
 <button className="btn btn-primary m-1" onClick={handleLower} >LowerCase</button>
-{/* <button className="btn btn-primary" onClick={handleBtn} >UpperCase</button> */}
+<button className="btn btn-primary" onClick={copyBtn} >Copy</button>
 {/* <button className="btn btn-primary" onClick={handleBtn} >UpperCase</button> */}
     </>
   )
