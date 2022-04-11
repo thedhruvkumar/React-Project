@@ -1,11 +1,22 @@
 import React from 'react'
+import { useState } from 'react'
 
 const TextForm = () => {
+
+    const [text, settext] = useState(0)
+
+    const handleBtn = () =>{
+
+    }
+    const textChange = () =>{
+        settext(text)
+    }
+
   return (
     <>
 <div class="mb-3">
   <label HtmlFor="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea value={text} onChange={textChange} class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
     </>
   )
