@@ -18,7 +18,7 @@ const TextForm = () => {
 <div class="mb-3">
   <textarea value={text} onChange={textChange} class="form-control" id="maintextForm" rows="3"></textarea>
 </div>
-<button className="btn-btn-primary">UpperCase</button>
+<button className="btn btn-primary" onClick={handleBtn} >UpperCase</button>
     </>
   )
 }

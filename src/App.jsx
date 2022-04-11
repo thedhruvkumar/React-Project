@@ -1,7 +1,6 @@
 import './App.css';
 import Footer from './Components/Footer';
 import NavBar from './Components/NavBar';
-import Slideshow from './Components/Slideshow';
 import TextForm from './Components/TextForm';
 
 function App() {
