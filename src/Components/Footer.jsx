@@ -59,7 +59,7 @@ const Footer = () => {
      <hr className="p-0 m-0 b-0"/>
      <div className="bg-light py-2">
          <div className="container text-center">
-             <p className="text-muted mb-0 py-2">© 2019 BBBootstrap All risghts reserved.</p>
+             <p className="text-muted mb-0 py-2">©2022 Kinetics Lab All risghts reserved.</p>
          </div>
      </div>
  </footer>
