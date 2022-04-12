@@ -22,6 +22,9 @@ const TextForm = () => {
     const handleClr = () =>{
       settext('')
     }
+    const handleSpace = ()=>{
+      settext(text.trim().split(/[ ]+/g).join(" "))
+    }
 
   return (
     <>
@@ -31,6 +34,7 @@ const TextForm = () => {
   <span>Characters : {text.split('').filter(f=>f!==' ').length}</span> <span>Words : {text.trim().split(' ').filter(f=>f!==" "  && f!=="").length}</span><br/>
 <button className="btn btn-primary m-1" onClick={handleUpper} >UpperCase</button>
 <button className="btn btn-primary m-1" onClick={handleLower} >LowerCase</button>
+<button className="btn btn-primary m-1" onClick={handleSpace} >Remove Extra Spaces</button>
 <button className="btn btn-primary m-1" onClick={copyBtn} >Copy</button>
 <button className="btn btn-primary m-1" onClick={handleClr} >Clear</button>
 </div>
