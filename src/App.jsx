@@ -17,9 +17,9 @@ function App() {
         <Footer/>
           </>}>
           <Route index element={<TextForm/>} />
-          <Route path="blogs" element={<Footer/>} />
-          <Route path="contact" element={<Dictionary />} />
-          <Route path="*" element={<TextForm/>} />
+          <Route path="/blogs" element={<Footer/>} />
+          <Route path="/contact" element={<Dictionary />} />
+          <Route path="/text" element={<TextForm/>} />
         </Route>
       </Routes>
     </BrowserRouter>
