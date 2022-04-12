@@ -15,7 +15,7 @@ function App() {
         <NavBar/>
         <Footer/>
           </>}>
-          <Route index element={<TextForm/>} />
+          <Route index element={<NavBar/>} />
           <Route path="/blogs" element={<Footer/>} />
           <Route path="/contact" element={<Dictionary />} />
           <Route path="/text" element={<TextForm/>} />
