@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Dictionary = () => {
+
+const Contact = () => {
   return (
     <>
     
@@ -8,4 +9,4 @@ const Dictionary = () => {
   )
 }
 
-export default Dictionary
+export default Contact

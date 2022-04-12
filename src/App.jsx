@@ -4,24 +4,23 @@ import NavBar from './Components/NavBar';
 import TextForm from './Components/TextForm';
 import {BrowserRouter , Route , Routes} from 'react-router-dom'
 import Dictionary from './Components/Dictionary';
+import Contact from './Components/Contact';
 
 function App() {
   return (
     <>
+    <NavBar></NavBar>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={
-          <>
-        <NavBar/>
-        <Footer/>
-          </>}>
-          <Route index element={<NavBar/>} />
+        <Route exact path="/" element={<TextForm></TextForm>}/>
           <Route path="/blogs" element={<Footer/>} />
-          <Route path="/contact" element={<Dictionary />} />
+          <Route path="/dict" element={<Dictionary />} />
           <Route path="/text" element={<TextForm/>} />
-        </Route>
+          <Route path="/contact" element={<Contact/>} />
+        
       </Routes>
     </BrowserRouter>
+    <Footer></Footer>
     </>
   );
 }
