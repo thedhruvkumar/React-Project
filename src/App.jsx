@@ -12,7 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-        <NavBar/><Footer/>
+        <NavBar/>
+        <TextForm/>
+        <Footer/>
           </>}>
           <Route index element={<TextForm/>} />
           <Route path="blogs" element={<Footer/>} />
