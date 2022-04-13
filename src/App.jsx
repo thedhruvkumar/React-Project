@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     
-          <NavBar></NavBar>
+    <NavBar></NavBar>
     <BrowserRouter>
       <Routes>
        
@@ -24,7 +24,7 @@ function App() {
       </Routes>
 
     </BrowserRouter>
-          <Footer></Footer>
+    <Footer></Footer>
     
     </>
   );
