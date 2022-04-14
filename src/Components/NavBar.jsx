@@ -1,15 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Link } from "react-router-dom";
+import { <NavLink></NavLink> } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <NavLink className="navbar-brand" to="/">
             Kinetics Lab
-          </Link>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -24,19 +24,19 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-Link active" aria-current="page" to="/">
+                <NavLink className="nav-Link" activeClassName='active' to="/">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link" to="text">
+                <NavLink className="nav-Link" activeClassName='active' to="text">
                   Text Analyzer
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link" to="dict">
+                <NavLink className="nav-Link" activeClassName='active' to="dict">
                   Dictionary
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
