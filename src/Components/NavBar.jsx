@@ -24,17 +24,17 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-Link" activeClassName='active' to="/">
+                <NavLink className="nav-link" activeClassName='active' to="/">
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-Link" activeClassName='active' to="text">
+                <NavLink className="nav-link" activeClassName='active' to="text">
                   Text Analyzer
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-Link" activeClassName='active' to="dict">
+                <NavLink className="nav-link" activeClassName='active' to="dict">
                   Dictionary
                 </NavLink>
               </li>
